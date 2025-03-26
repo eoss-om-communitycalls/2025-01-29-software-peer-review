@@ -81,6 +81,7 @@ Peer review is an extremely productive process, but it is also a labor-intensive
 ## Incentivize and Recognize Reviewers
 
 In both scientific publishing and software development, providing good reviews can feel like a thankless job. It is therefore important to consider how to incentivize and recognize reviewers. For example:
+
 - Featuring reviewers and their work in project blog posts or newsletters 
 - Creating badges or other public-facing signifiers for reviewers
 - Implementing an open review process, where reviewers and their reviews are shared publicly
