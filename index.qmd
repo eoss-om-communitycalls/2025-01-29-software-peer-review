@@ -53,10 +53,10 @@ When considering implementing peer review, take time to think about other stakeh
 
 _Set Basic, High-Level Guidelines_. Establishing and communicating the top-level goals and processes involved in your project’s peer review implementation makes it easy for the community to understand the value of reviews and the expectations associated with being involved in the review process. [rOpenSci’s Editorial Board](https://numfocus.org/blog/how-ropensci-uses-code-review-to-promote-reproducible-science), for example, succinctly states the project’s objectives and expectations [quoted below, verbatim]:
 
-    - **Develop standards and guidelines** for your authors and reviewers to use. Borrow these freely from other projects (feel free to use ours), and modify them iteratively as you go.
-    - **Use automated tools** such as code linters, test suites, and test coverage measures to reduce burden on authors, reviewers, and editors as much as possible.
-    - **Have a clear scope**. Spell out to yourselves and potential contributors what your project will accept, and why. This will save a lot of confusion and effort in the future.
-    - **Build a community** through incentives of networking, opportunities to learn, and kindness.
+    - *Develop standards and guidelines* for your authors and reviewers to use. Borrow these freely from other projects (feel free to use ours), and modify them iteratively as you go.
+    - *Use automated tools* such as code linters, test suites, and test coverage measures to reduce burden on authors, reviewers, and editors as much as possible.
+    - *Have a clear scope*. Spell out to yourselves and potential contributors what your project will accept, and why. This will save a lot of confusion and effort in the future.
+    - *Build a community* through incentives of networking, opportunities to learn, and kindness.
 
 Other high-level guidelines might include:
 
