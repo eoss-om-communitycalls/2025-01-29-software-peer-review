@@ -1,8 +1,8 @@
 ---
-title: "An example report "
-subtitle: "Exploring how to report out from community calls"
-authors: ["Author Number One", "Author Number Two"]
-date: "August 13, 2024"
+title: "Implementing Software Peer Review"
+subtitle: "Tips and Examples"
+authors: ["Yani Bellini Saibene", "Daniel Blankenberg", "Beth Duckles", "Jonah Duckles", "Kate Hertweck", "Daniel S. Katz", "Josh Moore", "Noam Ross", "Lior Schachaf", "Reshama Shaikh", "Dan Sholler", "Carol Willing"]
+date: "January 29, 2025"
 format:
     html: 
       self-contained: true
@@ -15,40 +15,108 @@ citation-location: margin
 bibliography: bibliography.bib
 ---
 
-This template can be used to create simple reports for reporting the output / outcomes of activities and events. It is built and rendered using quarto 
+Peer review is a helpful tool for [ensuring high-quality, reliable, and maintainable software](https://ropensci.org/software-review/). In this document, we share insights discussed in the Chan-Zuckerberg Initiative’s Essential Open Source Software program community call held on January 29, 2025, featuring rOpenSci’s [Noam Ross](https://www.noamross.net/). 
 
-# Section 1 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla placerat pretium tempus. Mauris eget nisl ante. Etiam iaculis, nisl ultricies facilisis aliquet, urna odio porta nisi, non tristique enim sapien eget mi. Proin sed orci lobortis, sodales orci quis, consectetur nulla. Phasellus eget enim rhoncus, fermentum nisi ut, aliquet nulla. Sed mollis ullamcorper dolor, at tempus est vulputate eget. Mauris consequat felis nec eros venenatis, sit amet tempor neque consectetur. Curabitur pharetra, metus a sodales fermentum, neque libero sollicitudin magna, eget fermentum sapien dolor sit amet dolor. Fusce odio felis, pulvinar in laoreet at, sodales sed magna. Sed sagittis, enim id feugiat laoreet, erat nisi rhoncus ipsum, vitae suscipit quam nulla id libero. Integer condimentum, eros eget rutrum porta, tortor turpis sodales ligula, a facilisis nisi tortor id risus. [^note]
+# Setting Goals for the Peer Review Process: What does your project want to achieve? 
 
-[^note]: this is a sidenote. it can contain whatever HTML content you want in it. 
+Software peer review is beneficial at various stages of development and can be used for a variety of purposes. When considering implementing a review process, the first step is thinking about the task itself: What is it that you’re trying to review? A few examples of cases that can benefit from review include:
 
-## Subsection 1.1
+    * A new, complete software project (e.g., preparing for its first release)
+    * A new pull request for an existing project
+    * An existing project undergoing maintenance
+    * An existing project receiving major updates
+    * An existing project adding features or security enhancements
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla placerat pretium tempus. Mauris eget nisl ante. Etiam iaculis, nisl ultricies facilisis aliquet, urna odio porta nisi, non tristique enim sapien eget mi. Proin sed orci lobortis, sodales orci quis, consectetur nulla. Phasellus eget enim rhoncus, fermentum nisi ut, aliquet nulla. Sed mollis ullamcorper dolor, at tempus est vulputate eget. Mauris consequat felis nec eros venenatis, sit amet tempor neque consectetur. Curabitur pharetra, metus a sodales fermentum, neque libero sollicitudin magna, eget fermentum sapien dolor sit amet dolor. Fusce odio felis, pulvinar in laoreet at, sodales sed magna. Sed sagittis, enim id feugiat laoreet, erat nisi rhoncus ipsum, vitae suscipit quam nulla id libero. Integer condimentum, eros eget rutrum porta, tortor turpis sodales ligula, a facilisis nisi tortor id risus. ^[You can also include notes inline, and don't need to create an identifier for them]
+Each particular case requires thinking through the goals of the review. In some cases, for example, the goal is to improve the quality of the software and ensure that contributions and packages follow best-practices; in other cases, review motivations may be more narrowly focused, such as ensuring that software complies with an organization’s security standards. It is therefore worthwhile to discuss objectives with project members and the community, focusing as much as possible on the groups the changes will impact the most. In other words, what is your project’s goal in implementing peer review processes, and who do these enhancements benefit?
 
-# Section 2 
+Goals that benefit the project’s ***developers*** might include:
 
-![A Venn diagram of the Scientific Open Source Landscape](https://dropshare.duckles.nz/scienceoss.jpg)
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla placerat pretium tempus. Mauris eget nisl ante. Etiam iaculis, nisl ultricies facilisis aliquet, urna odio porta nisi, non tristique enim sapien eget mi. Proin sed orci lobortis, sodales orci quis, consectetur nulla. Phasellus eget enim rhoncus, fermentum nisi ut, aliquet nulla. Sed mollis ullamcorper dolor, at tempus est vulputate eget. Mauris consequat felis nec eros venenatis, sit amet tempor neque consectetur. Curabitur pharetra, metus a sodales fermentum, neque libero sollicitudin magna, eget fermentum sapien dolor sit amet dolor. Fusce odio felis, pulvinar in laoreet at, sodales sed magna. Sed sagittis, enim id feugiat laoreet, erat nisi rhoncus ipsum, vitae suscipit quam nulla id libero. Integer condimentum, eros eget rutrum porta, tortor turpis sodales ligula, a facilisis nisi tortor id risus. [@geiger_challenges_2018]
+    * Managing interoperability and dependencies
+    * Software development skill-building and best-practices
+    * Improving or maintaining security
+    * Protecting the project’s brand or reputation
+    * Benefitting from various areas of expertise of team members and the community
+    * Saving time
 
-# Conclusion 
+Goals that benefit the project’s ***users*** might include:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla placerat pretium tempus. Mauris eget nisl ante. Etiam iaculis, nisl ultricies facilisis aliquet, urna odio porta nisi, non tristique enim sapien eget mi. Proin sed orci lobortis, sodales orci quis, consectetur nulla. Phasellus eget enim rhoncus, fermentum nisi ut, aliquet nulla. Sed mollis ullamcorper dolor, at tempus est vulputate eget. Mauris consequat felis nec eros venenatis, sit amet tempor neque consectetur. Curabitur pharetra, metus a sodales fermentum, neque libero sollicitudin magna, eget fermentum sapien dolor sit amet dolor. Fusce odio felis, pulvinar in laoreet at, sodales sed magna. Sed sagittis, enim id feugiat laoreet, erat nisi rhoncus ipsum, vitae suscipit quam nulla id libero. Integer condimentum, eros eget rutrum porta, tortor turpis sodales ligula, a facilisis nisi tortor id risus.
+    * Higher quality software
+    * Reusable software
+    * Improving awareness of the project's changes
+    * Minimizing breaking changes and downtime for users
 
-## Including Tables 
-| Country           | Population      |
-|-------------------|-----------------|
-| China             | 1,412,600,000   |
-| India             | 1,366,000,000   |
-| United States     | 331,000,000     |
-| Indonesia         | 273,500,000     |
-| Pakistan          | 220,900,000     |
-| Brazil            | 212,600,000     |
-| Nigeria           | 206,100,000     |
-| Bangladesh        | 166,300,000     |
-| Russia            | 146,700,000     |
-| Mexico            | 126,000,000     |
+When considering implementing peer review, take time to think about other stakeholders who might benefit (or otherwise be impacted) by review processes and their outcomes. Are there upstream or downstream projects whose developers should have input into review process design? Is there someone on your team who communicates project changes and needs to be brought into the implementation process to better help the community understand the new process? Starting with the broadest group of stakeholders possible and narrowing the group down according to the goals and impacts of the review process helps to ensure that the new process is well-received and sensitive to stakeholder needs.
+
+
+# Quick Tips
+
+_Set Basic, High-Level Guidelines_. Establishing and communicating the top-level goals and processes involved in your project’s peer review implementation makes it easy for the community to understand the value of reviews and the expectations associated with being involved in the review process. [rOpenSci’s Editorial Board](https://numfocus.org/blog/how-ropensci-uses-code-review-to-promote-reproducible-science), for example, succinctly states the project’s objectives and expectations [quoted below, verbatim]:
+
+    * **Develop standards and guidelines** for your authors and reviewers to use. Borrow these freely from other projects (feel free to use ours), and modify them iteratively as you go.
+    * **Use automated tools** such as code linters, test suites, and test coverage measures to reduce burden on authors, reviewers, and editors as much as possible.
+    * **Have a clear scope**. Spell out to yourselves and potential contributors what your project will accept, and why. This will save a lot of confusion and effort in the future.
+    * **Build a community** through incentives of networking, opportunities to learn, and kindness.
+
+Other high-level guidelines might include:
+
+    * Pay attention to upstream and downstream dependencies 
+    * Define and enforce guidelines for productive, inclusive communication about the review process (for both reviewers and reviewees) 
+        - Ensure that a Code of Conduct is linked in the guidelines document and that review communications adhere to the CoC
+        - Provide guidance and training in healthy communication to those who will be conducting reviews
+        - Make CoC violation reporting mechanisms transparent to those having their contributions reviewed
+    * Communicate when reviews lead to acceptance or rejection, and be thoughtful and clear when explaining rejection–contributors are more likely to “try again” when they have a positive experience and understand why changes are not accepted
+
+_Decide Who is Responsible for Reviewing_. Peer review is an extremely productive process, but it is also a labor-intensive one. Project contributors and maintainers are often already busy and adding additional tasks can create a burdensome and tiring environment. How can your team share the work of reviewing while ensuring the review process produces desired results? Your project might consider:
+    * Discussing who has the skills to participate in reviewing software
+    * Deciding how to upskill those who are interested in reviewing
+    * Setting a reasonable cadence for review (e.g., ongoing or in batches)
+    * Engaging the broader community in the review process
+
+_Incentivize and Recognize Reviewers_. In both scientific publishing and software development, providing good reviews can feel like a thankless job. It is therefore important to consider how to incentivize and recognize reviewers. For example:
+    * Featuring reviewers and their work in project blog posts or newsletters 
+    * Creating badges or other public-facing signifiers for reviewers
+    * Implementing an open review process, where reviewers and their reviews are shared publicly
+    * Automating where possible, such as implementing CI tools, to reduce reviewer burden and incentivize participation
+    * Use review as an on-ramp to other leadership roles in your project (e.g., maintainer, core team member)
+    * Offer avenues to authorship or other formal recognition of effort in outputs
+        - Your team could start with the [CRediT Model](https://credit.niso.org/) to help define when reviewing contributions rise to the level of authorship
+    * Examples:
+        - Bioconductor’s [Package Reviewers Recognition page](https://bioconductor.org/about/package-reviewers/) 
+
+
+# Software Peer Review Guides from Various Communities
+
+U.S. Research Software Engineers Association collection of [Code Review Resources](https://us-rse.org/wg/code-review/) 
+
+rOpenSci [Software Peer Review Guide](https://ropensci.org/software-review/) and [Review Template](https://devguide.ropensci.org/reviewtemplate.html) 
+
+pyOpenSci [Peer Review Guide](https://www.pyopensci.org/software-peer-review/how-to/reviewer-guide.html) 
+
+Mozilla Science [Code Review in the Lab](https://mozillascience.github.io/codeReview/intro.html) 
+
+Journal of Open Source Software [Reviewer Guide](https://joss.readthedocs.io/en/latest/reviewer_guidelines.html) 
+
+ReScience C [Reviewing Process for Evaluating Replicability](https://rescience.github.io/edit/)  
+
+Bioconductor [Peer Review Resources](http://contributions.bioconductor.org/reviewer-resources-overview.html) and [Review Template/Checklist](http://contributions.bioconductor.org/docs/package-review-checklist.md) 
+
+JupyterHub Pull Request Workflow including [What to Look for When Reviewing](https://jupyterhub-team-compass.readthedocs.io/en/latest/practices/pull_requests.html#what-to-look-for-when-reviewing) 
+
+
+# Insights on the Review Process 
+
+_Considerations When Designing and Implementing a Review Process_
+    * Marian Petre and Greg Wilson’s _[Code Review For and By Scientists](https://arxiv.org/pdf/1407.5648v2)_
+    * MacLeod et al.’s _[Code Reviewing in the Trenches](https://www.awesomecodereviews.com/617bcf1e4c7b29784d396d71e1c1c010/Code-Reviewing-in-the-Trenches-Understanding-Challenges-Best-Practices-and-Tool-Needs.pdf)_ 
+    * _[Awesome Code Reviews](https://www.awesomecodereviews.com/workshops/)_ website (paid consultation and free resources)
+
+_Experiences Reviewing and Being Reviewed_
+    * Mara Averick’s _[So you (don’t) think you can review a package](https://ropensci.org/blog/2017/08/22/first-package-review/)_, based on her review of Nicholas Tierney’s _[visdat package](https://ropensci.org/blog/2017/08/22/visdat/)_
+    * Verena Haunschmid’s _[Experiences as a first time rOpenSci package reviewer](https://ropensci.org/blog/2017/09/08/first-review-experiences/)_
+    * Carol Lee and Catherine M. Hicks _[Understanding and Effectively Mitigating Code Review Anxiety](https://osf.io/preprints/psyarxiv/8k5a4_v1)_
+    * Carol Lee and Kristen Foster-Marks _[Code Review Anxiety Workbook](https://developer-success-lab.gitbook.io/code-review-anxiety-workbook-1)_
+
 
 <!-- FOOTER & LOGOS Please do not modify below --> 
 ----
