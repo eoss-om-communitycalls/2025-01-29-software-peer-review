@@ -51,14 +51,16 @@ When considering implementing peer review, take time to think about other stakeh
 
 # Quick Tips
 
-_Set Basic, High-Level Guidelines_. Establishing and communicating the top-level goals and processes involved in your project’s peer review implementation makes it easy for the community to understand the value of reviews and the expectations associated with being involved in the review process. [rOpenSci’s Editorial Board](https://numfocus.org/blog/how-ropensci-uses-code-review-to-promote-reproducible-science), for example, succinctly states the project’s objectives and expectations (quoted below, verbatim):
+## Set Basic, High-Level Guidelines
+
+Establishing and communicating the top-level goals and processes involved in your project’s peer review implementation makes it easy for the community to understand the value of reviews and the expectations associated with being involved in the review process. [rOpenSci’s Editorial Board](https://numfocus.org/blog/how-ropensci-uses-code-review-to-promote-reproducible-science), for example, succinctly states the project’s objectives and expectations (quoted below, verbatim):
 
  - **Develop standards and guidelines** for your authors and reviewers to use. Borrow these freely from other projects (feel free to use ours), and modify them iteratively as you go.
 - **Use automated tools** such as code linters, test suites, and test coverage measures to reduce burden on authors, reviewers, and editors as much as possible.
 - **Have a clear scope**. Spell out to yourselves and potential contributors what your project will accept, and why. This will save a lot of confusion and effort in the future.
 - **Build a community** through incentives of networking, opportunities to learn, and kindness.
 
-Other high-level guidelines might include:
+### Other high-level guidelines might include:
 
 - Pay attention to upstream and downstream dependencies 
 - Define and enforce guidelines for productive, inclusive communication about the review process (for both reviewers and reviewees) 
@@ -67,13 +69,18 @@ Other high-level guidelines might include:
     - Make CoC violation reporting mechanisms transparent to those having their contributions reviewed
 - Communicate when reviews lead to acceptance or rejection, and be thoughtful and clear when explaining rejection–contributors are more likely to “try again” when they have a positive experience and understand why changes are not accepted
 
-_Decide Who is Responsible for Reviewing_. Peer review is an extremely productive process, but it is also a labor-intensive one. Project contributors and maintainers are often already busy and adding additional tasks can create a burdensome and tiring environment. How can your team share the work of reviewing while ensuring the review process produces desired results? Your project might consider:
+## Decide Who is Responsible for Reviewing
+
+Peer review is an extremely productive process, but it is also a labor-intensive one. Project contributors and maintainers are often already busy and adding additional tasks can create a burdensome and tiring environment. How can your team share the work of reviewing while ensuring the review process produces desired results? Your project might consider:
+
 - Discussing who has the skills to participate in reviewing software
 - Deciding how to upskill those who are interested in reviewing
 - Setting a reasonable cadence for review (e.g., ongoing or in batches)
 - Engaging the broader community in the review process
 
-_Incentivize and Recognize Reviewers_. In both scientific publishing and software development, providing good reviews can feel like a thankless job. It is therefore important to consider how to incentivize and recognize reviewers. For example:
+## Incentivize and Recognize Reviewers
+
+In both scientific publishing and software development, providing good reviews can feel like a thankless job. It is therefore important to consider how to incentivize and recognize reviewers. For example:
 - Featuring reviewers and their work in project blog posts or newsletters 
 - Creating badges or other public-facing signifiers for reviewers
 - Implementing an open review process, where reviewers and their reviews are shared publicly
@@ -84,34 +91,30 @@ _Incentivize and Recognize Reviewers_. In both scientific publishing and softwar
 - Examples:
     - Bioconductor’s [Package Reviewers Recognition page](https://bioconductor.org/about/package-reviewers/) 
 
+# Resources
 
-# Software Peer Review Guides from Various Communities
+## Software Peer Review Guides from Various Communities
 
-U.S. Research Software Engineers Association collection of [Code Review Resources](https://us-rse.org/wg/code-review/) 
-
-rOpenSci [Software Peer Review Guide](https://ropensci.org/software-review/) and [Review Template](https://devguide.ropensci.org/reviewtemplate.html) 
-
-pyOpenSci [Peer Review Guide](https://www.pyopensci.org/software-peer-review/how-to/reviewer-guide.html) 
-
-Mozilla Science [Code Review in the Lab](https://mozillascience.github.io/codeReview/intro.html) 
-
-Journal of Open Source Software [Reviewer Guide](https://joss.readthedocs.io/en/latest/reviewer_guidelines.html) 
-
-ReScience C [Reviewing Process for Evaluating Replicability](https://rescience.github.io/edit/)  
-
-Bioconductor [Peer Review Resources](http://contributions.bioconductor.org/reviewer-resources-overview.html) and [Review Template/Checklist](http://contributions.bioconductor.org/docs/package-review-checklist.md) 
-
-JupyterHub Pull Request Workflow including [What to Look for When Reviewing](https://jupyterhub-team-compass.readthedocs.io/en/latest/practices/pull_requests.html#what-to-look-for-when-reviewing) 
+- U.S. Research Software Engineers Association collection of [Code Review Resources](https://us-rse.org/wg/code-review/) 
+- rOpenSci [Software Peer Review Guide](https://ropensci.org/software-review/) and [Review Template](https://devguide.ropensci.org/reviewtemplate.html) 
+- pyOpenSci [Peer Review Guide](https://www.pyopensci.org/software-peer-review/how-to/reviewer-guide.html) 
+- Mozilla Science [Code Review in the Lab](https://mozillascience.github.io/codeReview/intro.html) 
+- Journal of Open Source Software [Reviewer Guide](https://joss.readthedocs.io/en/latest/reviewer_guidelines.html) 
+- ReScience C [Reviewing Process for Evaluating Replicability](https://rescience.github.io/edit/)  
+- Bioconductor [Peer Review Resources](http://contributions.bioconductor.org/reviewer-resources-overview.html) and [Review Template/Checklist](http://contributions.bioconductor.org/docs/package-review-checklist.md) 
+- JupyterHub Pull Request Workflow including [What to Look for When Reviewing](https://jupyterhub-team-compass.readthedocs.io/en/latest/practices/pull_requests.html#what-to-look-for-when-reviewing) 
 
 
-# Insights on the Review Process 
+## Insights on the Review Process 
 
-_Considerations When Designing and Implementing a Review Process_
+### Considerations When Designing and Implementing a Review Process
+
 - Marian Petre and Greg Wilson’s _[Code Review For and By Scientists](https://arxiv.org/pdf/1407.5648v2)_
 - MacLeod et al.’s _[Code Reviewing in the Trenches](https://www.awesomecodereviews.com/617bcf1e4c7b29784d396d71e1c1c010/Code-Reviewing-in-the-Trenches-Understanding-Challenges-Best-Practices-and-Tool-Needs.pdf)_ 
 - _[Awesome Code Reviews](https://www.awesomecodereviews.com/workshops/)_ website (paid consultation and free resources)
 
-_Experiences Reviewing and Being Reviewed_
+### Experiences Reviewing and Being Reviewed
+
 - Mara Averick’s _[So you (don’t) think you can review a package](https://ropensci.org/blog/2017/08/22/first-package-review/)_, based on her review of Nicholas Tierney’s _[visdat package](https://ropensci.org/blog/2017/08/22/visdat/)_
 - Verena Haunschmid’s _[Experiences as a first time rOpenSci package reviewer](https://ropensci.org/blog/2017/09/08/first-review-experiences/)_
 - Carol Lee and Catherine M. Hicks _[Understanding and Effectively Mitigating Code Review Anxiety](https://osf.io/preprints/psyarxiv/8k5a4_v1)_
