@@ -4787,14 +4787,17 @@ vertical-align: -.125em;
 </section>
 <section id="quick-tips" class="level1">
 <h1>Quick Tips</h1>
-<p><em>Set Basic, High-Level Guidelines</em>. Establishing and communicating the top-level goals and processes involved in your project’s peer review implementation makes it easy for the community to understand the value of reviews and the expectations associated with being involved in the review process. <a href="https://numfocus.org/blog/how-ropensci-uses-code-review-to-promote-reproducible-science">rOpenSci’s Editorial Board</a>, for example, succinctly states the project’s objectives and expectations (quoted below, verbatim):</p>
+<section id="set-basic-high-level-guidelines" class="level2">
+<h2 class="anchored" data-anchor-id="set-basic-high-level-guidelines">Set Basic, High-Level Guidelines</h2>
+<p>Establishing and communicating the top-level goals and processes involved in your project’s peer review implementation makes it easy for the community to understand the value of reviews and the expectations associated with being involved in the review process. <a href="https://numfocus.org/blog/how-ropensci-uses-code-review-to-promote-reproducible-science">rOpenSci’s Editorial Board</a>, for example, succinctly states the project’s objectives and expectations (quoted below, verbatim):</p>
 <ul>
 <li><strong>Develop standards and guidelines</strong> for your authors and reviewers to use. Borrow these freely from other projects (feel free to use ours), and modify them iteratively as you go.</li>
 <li><strong>Use automated tools</strong> such as code linters, test suites, and test coverage measures to reduce burden on authors, reviewers, and editors as much as possible.</li>
 <li><strong>Have a clear scope</strong>. Spell out to yourselves and potential contributors what your project will accept, and why. This will save a lot of confusion and effort in the future.</li>
 <li><strong>Build a community</strong> through incentives of networking, opportunities to learn, and kindness.</li>
 </ul>
-<p>Other high-level guidelines might include:</p>
+<section id="other-high-level-guidelines-might-include" class="level3">
+<h3 class="anchored" data-anchor-id="other-high-level-guidelines-might-include">Other high-level guidelines might include:</h3>
 <ul>
 <li>Pay attention to upstream and downstream dependencies</li>
 <li>Define and enforce guidelines for productive, inclusive communication about the review process (for both reviewers and reviewees)
@@ -4805,24 +4808,59 @@ vertical-align: -.125em;
 </ul></li>
 <li>Communicate when reviews lead to acceptance or rejection, and be thoughtful and clear when explaining rejection–contributors are more likely to “try again” when they have a positive experience and understand why changes are not accepted</li>
 </ul>
-<p><em>Decide Who is Responsible for Reviewing</em>. Peer review is an extremely productive process, but it is also a labor-intensive one. Project contributors and maintainers are often already busy and adding additional tasks can create a burdensome and tiring environment. How can your team share the work of reviewing while ensuring the review process produces desired results? Your project might consider: - Discussing who has the skills to participate in reviewing software - Deciding how to upskill those who are interested in reviewing - Setting a reasonable cadence for review (e.g., ongoing or in batches) - Engaging the broader community in the review process</p>
-<p><em>Incentivize and Recognize Reviewers</em>. In both scientific publishing and software development, providing good reviews can feel like a thankless job. It is therefore important to consider how to incentivize and recognize reviewers. For example: - Featuring reviewers and their work in project blog posts or newsletters - Creating badges or other public-facing signifiers for reviewers - Implementing an open review process, where reviewers and their reviews are shared publicly - Automating where possible, such as implementing CI tools, to reduce reviewer burden and incentivize participation - Use review as an on-ramp to other leadership roles in your project (e.g., maintainer, core team member) - Offer avenues to authorship or other formal recognition of effort in outputs - Your team could start with the <a href="https://credit.niso.org/">CRediT Model</a> to help define when reviewing contributions rise to the level of authorship - Examples: - Bioconductor’s <a href="https://bioconductor.org/about/package-reviewers/">Package Reviewers Recognition page</a></p>
 </section>
-<section id="software-peer-review-guides-from-various-communities" class="level1">
-<h1>Software Peer Review Guides from Various Communities</h1>
-<p>U.S. Research Software Engineers Association collection of <a href="https://us-rse.org/wg/code-review/">Code Review Resources</a></p>
-<p>rOpenSci <a href="https://ropensci.org/software-review/">Software Peer Review Guide</a> and <a href="https://devguide.ropensci.org/reviewtemplate.html">Review Template</a></p>
-<p>pyOpenSci <a href="https://www.pyopensci.org/software-peer-review/how-to/reviewer-guide.html">Peer Review Guide</a></p>
-<p>Mozilla Science <a href="https://mozillascience.github.io/codeReview/intro.html">Code Review in the Lab</a></p>
-<p>Journal of Open Source Software <a href="https://joss.readthedocs.io/en/latest/reviewer_guidelines.html">Reviewer Guide</a></p>
-<p>ReScience C <a href="https://rescience.github.io/edit/">Reviewing Process for Evaluating Replicability</a></p>
-<p>Bioconductor <a href="http://contributions.bioconductor.org/reviewer-resources-overview.html">Peer Review Resources</a> and <a href="http://contributions.bioconductor.org/docs/package-review-checklist.md">Review Template/Checklist</a></p>
-<p>JupyterHub Pull Request Workflow including <a href="https://jupyterhub-team-compass.readthedocs.io/en/latest/practices/pull_requests.html#what-to-look-for-when-reviewing">What to Look for When Reviewing</a></p>
 </section>
-<section id="insights-on-the-review-process" class="level1">
-<h1>Insights on the Review Process</h1>
-<p><em>Considerations When Designing and Implementing a Review Process</em> - Marian Petre and Greg Wilson’s <em><a href="https://arxiv.org/pdf/1407.5648v2">Code Review For and By Scientists</a></em> - MacLeod et al.’s <em><a href="https://www.awesomecodereviews.com/617bcf1e4c7b29784d396d71e1c1c010/Code-Reviewing-in-the-Trenches-Understanding-Challenges-Best-Practices-and-Tool-Needs.pdf">Code Reviewing in the Trenches</a></em> - <em><a href="https://www.awesomecodereviews.com/workshops/">Awesome Code Reviews</a></em> website (paid consultation and free resources)</p>
-<p><em>Experiences Reviewing and Being Reviewed</em> - Mara Averick’s <em><a href="https://ropensci.org/blog/2017/08/22/first-package-review/">So you (don’t) think you can review a package</a></em>, based on her review of Nicholas Tierney’s <em><a href="https://ropensci.org/blog/2017/08/22/visdat/">visdat package</a></em> - Verena Haunschmid’s <em><a href="https://ropensci.org/blog/2017/09/08/first-review-experiences/">Experiences as a first time rOpenSci package reviewer</a></em> - Carol Lee and Catherine M. Hicks <em><a href="https://osf.io/preprints/psyarxiv/8k5a4_v1">Understanding and Effectively Mitigating Code Review Anxiety</a></em> - Carol Lee and Kristen Foster-Marks <em><a href="https://developer-success-lab.gitbook.io/code-review-anxiety-workbook-1">Code Review Anxiety Workbook</a></em></p>
+<section id="decide-who-is-responsible-for-reviewing" class="level2">
+<h2 class="anchored" data-anchor-id="decide-who-is-responsible-for-reviewing">Decide Who is Responsible for Reviewing</h2>
+<p>Peer review is an extremely productive process, but it is also a labor-intensive one. Project contributors and maintainers are often already busy and adding additional tasks can create a burdensome and tiring environment. How can your team share the work of reviewing while ensuring the review process produces desired results? Your project might consider:</p>
+<ul>
+<li>Discussing who has the skills to participate in reviewing software</li>
+<li>Deciding how to upskill those who are interested in reviewing</li>
+<li>Setting a reasonable cadence for review (e.g., ongoing or in batches)</li>
+<li>Engaging the broader community in the review process</li>
+</ul>
+</section>
+<section id="incentivize-and-recognize-reviewers" class="level2">
+<h2 class="anchored" data-anchor-id="incentivize-and-recognize-reviewers">Incentivize and Recognize Reviewers</h2>
+<p>In both scientific publishing and software development, providing good reviews can feel like a thankless job. It is therefore important to consider how to incentivize and recognize reviewers. For example: - Featuring reviewers and their work in project blog posts or newsletters - Creating badges or other public-facing signifiers for reviewers - Implementing an open review process, where reviewers and their reviews are shared publicly - Automating where possible, such as implementing CI tools, to reduce reviewer burden and incentivize participation - Use review as an on-ramp to other leadership roles in your project (e.g., maintainer, core team member) - Offer avenues to authorship or other formal recognition of effort in outputs - Your team could start with the <a href="https://credit.niso.org/">CRediT Model</a> to help define when reviewing contributions rise to the level of authorship - Examples: - Bioconductor’s <a href="https://bioconductor.org/about/package-reviewers/">Package Reviewers Recognition page</a></p>
+</section>
+</section>
+<section id="resources" class="level1">
+<h1>Resources</h1>
+<section id="software-peer-review-guides-from-various-communities" class="level2">
+<h2 class="anchored" data-anchor-id="software-peer-review-guides-from-various-communities">Software Peer Review Guides from Various Communities</h2>
+<ul>
+<li>U.S. Research Software Engineers Association collection of <a href="https://us-rse.org/wg/code-review/">Code Review Resources</a></li>
+<li>rOpenSci <a href="https://ropensci.org/software-review/">Software Peer Review Guide</a> and <a href="https://devguide.ropensci.org/reviewtemplate.html">Review Template</a></li>
+<li>pyOpenSci <a href="https://www.pyopensci.org/software-peer-review/how-to/reviewer-guide.html">Peer Review Guide</a></li>
+<li>Mozilla Science <a href="https://mozillascience.github.io/codeReview/intro.html">Code Review in the Lab</a></li>
+<li>Journal of Open Source Software <a href="https://joss.readthedocs.io/en/latest/reviewer_guidelines.html">Reviewer Guide</a></li>
+<li>ReScience C <a href="https://rescience.github.io/edit/">Reviewing Process for Evaluating Replicability</a><br>
+</li>
+<li>Bioconductor <a href="http://contributions.bioconductor.org/reviewer-resources-overview.html">Peer Review Resources</a> and <a href="http://contributions.bioconductor.org/docs/package-review-checklist.md">Review Template/Checklist</a></li>
+<li>JupyterHub Pull Request Workflow including <a href="https://jupyterhub-team-compass.readthedocs.io/en/latest/practices/pull_requests.html#what-to-look-for-when-reviewing">What to Look for When Reviewing</a></li>
+</ul>
+</section>
+<section id="insights-on-the-review-process" class="level2">
+<h2 class="anchored" data-anchor-id="insights-on-the-review-process">Insights on the Review Process</h2>
+<section id="considerations-when-designing-and-implementing-a-review-process" class="level3">
+<h3 class="anchored" data-anchor-id="considerations-when-designing-and-implementing-a-review-process">Considerations When Designing and Implementing a Review Process</h3>
+<ul>
+<li>Marian Petre and Greg Wilson’s <em><a href="https://arxiv.org/pdf/1407.5648v2">Code Review For and By Scientists</a></em></li>
+<li>MacLeod et al.’s <em><a href="https://www.awesomecodereviews.com/617bcf1e4c7b29784d396d71e1c1c010/Code-Reviewing-in-the-Trenches-Understanding-Challenges-Best-Practices-and-Tool-Needs.pdf">Code Reviewing in the Trenches</a></em></li>
+<li><em><a href="https://www.awesomecodereviews.com/workshops/">Awesome Code Reviews</a></em> website (paid consultation and free resources)</li>
+</ul>
+</section>
+<section id="experiences-reviewing-and-being-reviewed" class="level3">
+<h3 class="anchored" data-anchor-id="experiences-reviewing-and-being-reviewed">Experiences Reviewing and Being Reviewed</h3>
+<ul>
+<li>Mara Averick’s <em><a href="https://ropensci.org/blog/2017/08/22/first-package-review/">So you (don’t) think you can review a package</a></em>, based on her review of Nicholas Tierney’s <em><a href="https://ropensci.org/blog/2017/08/22/visdat/">visdat package</a></em></li>
+<li>Verena Haunschmid’s <em><a href="https://ropensci.org/blog/2017/09/08/first-review-experiences/">Experiences as a first time rOpenSci package reviewer</a></em></li>
+<li>Carol Lee and Catherine M. Hicks <em><a href="https://osf.io/preprints/psyarxiv/8k5a4_v1">Understanding and Effectively Mitigating Code Review Anxiety</a></em></li>
+<li>Carol Lee and Kristen Foster-Marks <em><a href="https://developer-success-lab.gitbook.io/code-review-anxiety-workbook-1">Code Review Anxiety Workbook</a></em></li>
+</ul>
+</section>
+</section>
 <section id="section" class="level2">
 <h2 class="anchored" data-anchor-id="section"><!-- FOOTER & LOGOS Please do not modify below --></h2>
 <p><em>This resource was generated as part of <a href="https://chanzuckerberg.com/eoss/">CZI’s EOSS</a> Community Calls during late 2024 with <a href="https://orgmycology.com">Organizational Mycology</a> facilitating discussions, gathering input, and generating the final document. Participants in the calls, and open comment periods are given co-authorship in alphabetical order by last name.</em></p>

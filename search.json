@@ -7,6 +7,41 @@
     "text": "Peer review is a helpful tool for ensuring high-quality, reliable, and maintainable software. In this document, we share insights discussed in the Chan-Zuckerberg Initiative’s Essential Open Source Software program community call held on January 29, 2025, featuring rOpenSci’s Noam Ross."
   },
   {
+    "objectID": "index.html#set-basic-high-level-guidelines",
+    "href": "index.html#set-basic-high-level-guidelines",
+    "title": "Implementing Software Peer Review",
+    "section": "Set Basic, High-Level Guidelines",
+    "text": "Set Basic, High-Level Guidelines\nEstablishing and communicating the top-level goals and processes involved in your project’s peer review implementation makes it easy for the community to understand the value of reviews and the expectations associated with being involved in the review process. rOpenSci’s Editorial Board, for example, succinctly states the project’s objectives and expectations (quoted below, verbatim):\n\nDevelop standards and guidelines for your authors and reviewers to use. Borrow these freely from other projects (feel free to use ours), and modify them iteratively as you go.\nUse automated tools such as code linters, test suites, and test coverage measures to reduce burden on authors, reviewers, and editors as much as possible.\nHave a clear scope. Spell out to yourselves and potential contributors what your project will accept, and why. This will save a lot of confusion and effort in the future.\nBuild a community through incentives of networking, opportunities to learn, and kindness.\n\n\nOther high-level guidelines might include:\n\nPay attention to upstream and downstream dependencies\nDefine and enforce guidelines for productive, inclusive communication about the review process (for both reviewers and reviewees)\n\nEnsure that a Code of Conduct is linked in the guidelines document and that review communications adhere to the CoC\nProvide guidance and training in healthy communication to those who will be conducting reviews\nMake CoC violation reporting mechanisms transparent to those having their contributions reviewed\n\nCommunicate when reviews lead to acceptance or rejection, and be thoughtful and clear when explaining rejection–contributors are more likely to “try again” when they have a positive experience and understand why changes are not accepted"
+  },
+  {
+    "objectID": "index.html#decide-who-is-responsible-for-reviewing",
+    "href": "index.html#decide-who-is-responsible-for-reviewing",
+    "title": "Implementing Software Peer Review",
+    "section": "Decide Who is Responsible for Reviewing",
+    "text": "Decide Who is Responsible for Reviewing\nPeer review is an extremely productive process, but it is also a labor-intensive one. Project contributors and maintainers are often already busy and adding additional tasks can create a burdensome and tiring environment. How can your team share the work of reviewing while ensuring the review process produces desired results? Your project might consider:\n\nDiscussing who has the skills to participate in reviewing software\nDeciding how to upskill those who are interested in reviewing\nSetting a reasonable cadence for review (e.g., ongoing or in batches)\nEngaging the broader community in the review process"
+  },
+  {
+    "objectID": "index.html#incentivize-and-recognize-reviewers",
+    "href": "index.html#incentivize-and-recognize-reviewers",
+    "title": "Implementing Software Peer Review",
+    "section": "Incentivize and Recognize Reviewers",
+    "text": "Incentivize and Recognize Reviewers\nIn both scientific publishing and software development, providing good reviews can feel like a thankless job. It is therefore important to consider how to incentivize and recognize reviewers. For example: - Featuring reviewers and their work in project blog posts or newsletters - Creating badges or other public-facing signifiers for reviewers - Implementing an open review process, where reviewers and their reviews are shared publicly - Automating where possible, such as implementing CI tools, to reduce reviewer burden and incentivize participation - Use review as an on-ramp to other leadership roles in your project (e.g., maintainer, core team member) - Offer avenues to authorship or other formal recognition of effort in outputs - Your team could start with the CRediT Model to help define when reviewing contributions rise to the level of authorship - Examples: - Bioconductor’s Package Reviewers Recognition page"
+  },
+  {
+    "objectID": "index.html#software-peer-review-guides-from-various-communities",
+    "href": "index.html#software-peer-review-guides-from-various-communities",
+    "title": "Implementing Software Peer Review",
+    "section": "Software Peer Review Guides from Various Communities",
+    "text": "Software Peer Review Guides from Various Communities\n\nU.S. Research Software Engineers Association collection of Code Review Resources\nrOpenSci Software Peer Review Guide and Review Template\npyOpenSci Peer Review Guide\nMozilla Science Code Review in the Lab\nJournal of Open Source Software Reviewer Guide\nReScience C Reviewing Process for Evaluating Replicability\n\nBioconductor Peer Review Resources and Review Template/Checklist\nJupyterHub Pull Request Workflow including What to Look for When Reviewing"
+  },
+  {
+    "objectID": "index.html#insights-on-the-review-process",
+    "href": "index.html#insights-on-the-review-process",
+    "title": "Implementing Software Peer Review",
+    "section": "Insights on the Review Process",
+    "text": "Insights on the Review Process\n\nConsiderations When Designing and Implementing a Review Process\n\nMarian Petre and Greg Wilson’s Code Review For and By Scientists\nMacLeod et al.’s Code Reviewing in the Trenches\nAwesome Code Reviews website (paid consultation and free resources)\n\n\n\nExperiences Reviewing and Being Reviewed\n\nMara Averick’s So you (don’t) think you can review a package, based on her review of Nicholas Tierney’s visdat package\nVerena Haunschmid’s Experiences as a first time rOpenSci package reviewer\nCarol Lee and Catherine M. Hicks Understanding and Effectively Mitigating Code Review Anxiety\nCarol Lee and Kristen Foster-Marks Code Review Anxiety Workbook"
+  },
+  {
     "objectID": "index.html#section",
     "href": "index.html#section",
     "title": "Implementing Software Peer Review",
